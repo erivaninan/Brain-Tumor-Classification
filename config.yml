@@ -1,0 +1,56 @@
+projet:
+  nom: BRAIN_TUMOR
+  description: "Classification d'images de tumeurs cérébrales."
+
+environnement:
+  python_version: "3.11.5"
+  dépendances: 
+    - numpy
+    - pandas
+    - matplotlib
+    - scikit-learn
+    - tensorflow
+    - pillow
+    - albumentations
+
+données:
+  training: "data/Training - Images d'entraînement"
+  testing: "data/Testing - Images de test"
+  validation : 
+    training_sample : 0.2
+  image: 
+    size: 256 # à modifier
+    normalize: true                
+    standardize: true               
+    grayscale: true              
+
+# Paramètres d'augmentation 
+augmentation:
+  rotation_range: 20              # Rotation aléatoire (en degrés)
+  width_shift_range: 0.1          # Décalage horizontal (en fraction de l'image)
+  height_shift_range: 0.1         # Décalage vertical (en fraction de l'image)
+  zoom_range: 0.2                 # Zoom aléatoire
+  horizontal_flip: true           # Retournement horizontal
+  vertical_flip: false            # Retournement vertical
+
+
+
+
+
+notebooks:
+  - "notebooks/data_exploration.ipynb - Exploration des données"
+  - "notebooks/preprocessing.ipynb - Prétraitement des images"
+  - "notebooks/training.ipynb - Entraînement des modèles"
+
+résultats:
+  figures: "results/figures - Graphiques et visualisations"
+  metrics: "results/metrics.ipynb - Métriques de performance des modèles"
+
+src:
+  evaluations: "src/evaluations - Scripts d'évaluation des modèles"
+  models: "src/models - Définition et sauvegarde des modèles"
+
+fichiers:
+  - ".gitignore - Fichiers à ignorer"
+  - "requirements.txt - Liste des dépendances Python"
+
