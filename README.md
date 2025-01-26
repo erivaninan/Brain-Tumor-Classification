@@ -1,5 +1,7 @@
 # Détection et Classification des Tumeurs Cérébrales
 
+README rédigé par Lilya-Nada KHELID @Lilyakhelid
+
 ## Aperçu 🌟
 
 Ce projet a été réalisé dans le cadre d'un cours d'apprentissage statistique. Il s'agit d'un premier projet en traitement d'image.
